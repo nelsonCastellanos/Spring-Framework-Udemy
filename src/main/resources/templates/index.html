@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://ww.thymeleaft.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${titulo}"></title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}" />
+</head>
+
+<body>
+    <h1 class="color-rojo" th:text="${titulo}"></h1>
+    <h1 class="color-azul">Aplicando estilos al HTML Spring Boot</h1>
+    <img th:src="@{/images/Imanegn.jpg}" alt="Imagen seria bleach, ichigo vrs ulquiora" style="max-width: 100%;" />
+</body>
+
+</html>

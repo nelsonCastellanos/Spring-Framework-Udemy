@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://ww.thymeleaft.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+</head>
+
+<body>
+    <h1></h1>
+    <ul>
+        <li>
+            <a th:href="@{/params/string(texto='Como está Nelson')}">
+                /params/string?texto=Como está Nelson
+            </a>
+        </li>
+        <li>
+            <a th:href="@{/params/string(texto='Hola Nelson')}">
+                /params/string?texto=Nelson Castellanos
+            </a>
+        </li>
+        <li>
+            <a th:href="@{/params/mix-params(saludo='Nelson Javier Castellanos Garzón', numero=7)}">
+                /params/mix-param?saludo=Nelson Javier Castellanos Garzón&numero=7
+            </a>
+        </li>
+        <li>
+            <a th:href="@{/params/mix-params-requests(saludo='Pepito peres', numero=20)}">
+                /params/mix-param-requests?saludo=Pepito peres&numero=20
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>

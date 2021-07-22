@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://ww.thymeleaft.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${titulo}"></title>
+</head>
+
+<body>
+    <h1 th:text="${titulo}"></h1>
+    <span th:text="${usuario.nombres}"></span>
+    <span th:text="${usuario.apellidos}"></span>
+
+    <h2>Email usuario</h2>
+    <span th:if="${usuario.email}" th:text="${usuario.email}"></span>
+    <br />
+    <span th:if="${usuario.email == null}">El usuario no tiene correo electronico.</span>
+</body>
+
+</html>

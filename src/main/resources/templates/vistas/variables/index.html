@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://ww.thymeleaft.org">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title th:text="${titulo}"></title>
+</head>
+
+<body>
+    <h1 th:text="${titulo}"></h1>
+    <h2>Lista rutas para el controllador</h2>
+    <ul>
+        <li>
+            <a th:href="@{/variables/string/Nelson Castellanos/12}">
+                /variables/string/Nelson Castellanos/12
+            </a>
+        </li>
+        <li>
+            <a th:href="@{/variables/string/Nelson Castellanos/12}">
+                /variables/string/Javier Garzón/8
+            </a>
+        </li>
+        <li>
+            <a th:href="@{/variables/string/} + ${titulo}" th:text="${titulo}">
+                /variables/string/Q-vision- Spring Forever/17
+            </a>
+        </li>
+    </ul>
+</body>
+
+</html>
